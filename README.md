@@ -1,5 +1,7 @@
 # Learning Python
 
-* ETL
-* iPython
+## ETL
 * jieba
+* Beautiful Soup 4
+* Splinter
+___

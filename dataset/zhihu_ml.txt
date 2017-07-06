@@ -1,0 +1,126 @@
+機器學習入門資源不完全匯總
+感謝貢獻者： tang_Kaka_back@新浪微博
+歡迎補充指正，轉載請保留原作者和原文鏈接。本文是機器學習日報的一個專題合集，歡迎訂閱：請給hao@memect.com發郵件，標題＂訂閱機器學習日報＂。
+
+機器學習入門資源不完全匯總基本概念
+機器學習機器學習是近20多年興起的一門多領域交叉學科，涉及概率論、統計學、逼近論、凸分析、算法複雜度理論等多門學科。機器學習理論主要是設計和分析一些讓計算機可以自動“學習”的算法。機器學習算法是一類從數據中自動分析獲得規律，並利用規律對未知數據進行預測的算法。因為學習算法中涉及了大量的統計學理論，機器學習與統計推斷學聯繫尤為密切，也被稱為統計學習理論。算法設計方面，機器學習理論關注可以實現的，行之有效的學習算法。
+下面從微觀到宏觀試著梳理一下機器學習的範疇：一個具體的算法，領域進一步細分，實戰應用場景，與其他領域的關係。
+圖1:機器學習的例子：NLTK監督學習的工作流程圖(source: http://www. nltk.org/book/ch06.html)
+圖2:機器學習概要圖by Yaser Abu-Mostafa (Caltech) (source: Map of Machine Learning (Abu-Mostafa))
+圖3:機器學習實戰：在python scikit learn中選擇機器學習算法by Nishant Chandra (source: In pursuit of happiness!: Picking the right Machine Learning Algorithm)
+圖4:機器學習和其他學科的關係：數據科學的地鐵圖by Swami Chandrasekaran (source: Becoming a Data Scientist)
+機器學習入門資源不完全匯總入門攻略
+大致分三類： 起步體悟，實戰筆記，行家導讀
+•	機器學習入門者學習指南@果殼網(2013)作者白馬 -- [起步體悟] 研究生型入門者的親身經歷
+•	有沒有做機器學習的哥們？能否介紹一下是如何起步的@ourcoders-- [起步體悟]研究生型入門者的親身經歷，尤其要看reyoung的建議
+•	tornadomeet 機器學習筆記 (2013) -- [實戰筆記] 學霸的學習筆記，看看小伙伴是怎樣一步一步地掌握“機器學習”
+•	Machine Learning Roadmap: Your Self-Study Guide to Machine Learning(2014) Jason Brownlee -- [行家導讀] 雖然是英文版，但非常容易讀懂。對Beginner,Novice,Intermediate,Advanced讀者都有覆蓋。
+o	A Tour of Machine Learning Algorithms （2013） 這篇關於機器學習算法分類的文章也非常好
+o	Best Machine Learning Resources for Getting Started（2013）這片有中文翻譯機器學習的最佳入門學習資源@伯樂在線譯者programmer_lin
+•	門主的幾個建議
+o	既要有數學基礎，也要編程實踐
+o	別怕英文版，你不懂的大多是專業名詞，將來不論寫文章還是讀文檔都是英文為主
+o	[我是小廣告][我是小廣告]訂閱機器學習日報，跟踪業內熱點資料。
+機器學習入門資源不完全匯總更多攻略
+•	機器學習該怎麼入門@知乎 (2014)
+•	What's the easiest way to learn machine learning @quora (2013)
+•	What is the best way to study machine learning @quora (2012)
+•	Is there any roadmap for learning Machine Learning (ML) and its related courses at CMU Is there any roadmap for learning Machine Learning (ML) and its related courses at CMU(2014)
+機器學習入門資源不完全匯總課程資源
+Tom Mitchell 和Andrew Ng 的課都很適合入門
+機器學習入門資源不完全匯總入門課程機器學習入門資源不完全匯總2011 Tom Mitchell(CMU)機器學習
+英文原版視頻與課件PDF 他的《機器學習》在很多課程上被選做教材，有中文版。
+•	Decision Trees
+•	Probability and Estimation
+•	Naive Bayes
+•	Logistic Regression
+•	Linear Regression
+•	Practical Issues: Feature selection，Overfitting ...
+•	Graphical models: Bayes networks, EM，Mixture of Gaussians clustering ...
+•	Computational Learning Theory: PAC Learning, Mistake bounds ...
+•	Semi-Supervised Learning
+•	Hidden Markov Models
+•	Neural Networks
+•	Learning Representations: PCA, Deep belief networks, ICA, CCA ...
+•	Kernel Methods and SVM
+•	Active Learning
+•	Reinforcement Learning 以上為課程標題節選
+機器學習入門資源不完全匯總2014 Andrew Ng (Stanford)機器學習
+英文原版視頻這就是針對自學而設計的，免費還有修課認證。“老師講的是深入淺出，不用太擔心數學方面的東西。而且作業也非常適合入門者，都是設計好的程序框架，有作業指南，根據作業指南填寫該完成的部分就行。”（參見白馬同學的入門攻略）"推薦報名，跟著上課，做課後習題和期末考試。(因為只看不干，啥都學不會)。" (參見reyoung的建議）
+1.	Introduction (Week 1)
+2.	Linear Regression with One Variable (Week 1)
+3.	Linear Algebra Review (Week 1, Optional)
+4.	Linear Regression with Multiple Variables (Week 2)
+5.	Octave Tutorial (Week 2)
+6.	Logistic Regression (Week 3)
+7.	Regularization (Week 3)
+8.	Neural Networks: Representation (Week 4)
+9.	Neural Networks: Learning (Week 5)
+10.	Advice for Applying Machine Learning (Week 6)
+11.	Machine Learning System Design (Week 6)
+12.	Support Vector Machines (Week 7)
+13.	Clustering (Week 8)
+14.	Dimensionality Reduction (Week 8)
+15.	Anomaly Detection (Week 9)
+16.	Recommender Systems (Week 9)
+17.	Large Scale Machine Learning (Week 10)
+18.	Application Example: Photo OCR
+19.	Conclusion
+機器學習入門資源不完全匯總進階課程
+2013年Yaser Abu-Mostafa (Caltech) Learning from Data --內容更適合進階課程視頻,課件PDF@Caltech
+1.	The Learning Problem
+2.	Is Learning Feasible?
+3.	The Linear Model I
+4.	Error and Noise
+5.	Training versus Testing
+6.	Theory of Generalization
+7.	The VC Dimension
+8.	Bias-Variance Tradeoff
+9.	The Linear Model II
+10.	Neural Networks
+11.	Overfitting
+12.	Regularization
+13.	Validation
+14.	Support Vector Machines
+15.	Kernel Methods
+16.	Radial Basis Functions
+17.	Three Learning Principles
+18.	Epilogue
+2014年林軒田(國立台灣大學)機器學習基石(Machine Learning Foundations) --內容更適合進階，華文的教學講解課程主頁
+When Can Machines Learn? [何時可以使用機器學習] The Learning Problem [機器學習問題] -- Learning to Answer Yes/No [二元分類] -- Types of Learning [各式機器學習問題] -- Feasibility of Learning [機器學習的可行性]
+Why Can Machines Learn? [為什麼機器可以學習] -- Training versus Testing [訓練與測試] -- Theory of Generalization [舉一反三的一般化理論] -- The VC Dimension [VC 維度] -- Noise and Error [雜訊一錯誤]
+How Can Machines Learn? [機器可以怎麼樣學習] -- Linear Regression [線性迴歸] -- Linear `Soft' Classification [軟性的線性分類] -- Linear Classification beyond Yes/No [二元分類以外的分類問題] -- Nonlinear Transformation [非線性轉換]
+How Can Machines Learn Better? [機器可以怎麼樣學得更好] -- Hazard of Overfitting [過度訓練的危險] -- Preventing Overfitting I: Regularization [避免過度訓練一：控制調適] -- Preventing Overfitting II: Validation [避免過度訓練二：自我檢測] -- Three Learning Principles [三個機器學習的重要原則]
+機器學習入門資源不完全匯總更多選擇
+2008年Andrew Ng CS229機器學習 --這組視頻有些年頭了，主講人這兩年也高大上了.當然基本方法沒有太大變化，所以課件PDF可下載是優點。中文字幕視頻@網易公開課| 英文版視頻@youtube| 課件PDF@Stanford
+第1集.機器學習的動機與應用第2集.監督學習應用.梯度下降第3集.欠擬合與過擬合的概念第4集.牛頓方法第5集.生成學習算法第6集.樸素貝葉斯算法第7集.最優間隔分類器問題第8集.順序最小優化算法第9集.經驗風險最小化第10集.特徵選擇第11集.貝葉斯統計正則化第12集.K-means算法第13集.高斯混合模型第14集.主成分分析法第15集.奇異值分解第16集.馬爾可夫決策過程第17集.離散與維數災難第18集.線性二次型調節控制第19集.微分動態規劃第20集.策略搜索
+2012年余凱(百度)張潼(Rutgers)機器學習公開課 --內容更適合進階課程主頁@百度文庫｜課件PDF@龍星計劃
+第1節Introduction to ML and review of linear algebra, probability, statistics (kai) 第2節linear model (tong) 第3節overfitting and regularization(tong) 第4節linear classification (kai) 第5節basis expansion and kernelmethods (kai) 第6節model selection and evaluation(kai) 第7節model combination (tong) 第8節boosting and bagging (tong) 第9節overview of learning theory(tong) 第10節optimization in machinelearning (tong) 第11節online learning (tong) 第12節sparsity models (tong) 第13節introduction to graphicalmodels (kai) 第14節structured learning (kai) 第15節feature learning and deeplearning (kai) 第16節transfer learning and semi supervised learning (kai) 第17節matrix factorization and recommendations (kai) 第18節learning on images (kai) 第19節learning on the web (tong)
+機器學習入門資源不完全匯總論壇網站機器學習入門資源不完全匯總中文
+我愛機器學習 我愛機器學習
+http://www. mitbbs.com/bbsdoc/DataS ciences.html MITBBS－ 電腦網絡- 數據科學版
+機器學習小組 果殼> 機器學習小組
+http:// cos.name/cn/forum/22 統計之都» 統計學世界» 數據挖掘和機器學習
+北郵人論壇-北郵人的溫馨家園 北郵人論壇 >> 學術科技 >> 機器學習與數據挖掘
+機器學習入門資源不完全匯總英文
+josephmisiti/awesome-machine-learning · GitHub 機器學習資源大全
+Machine Learning Video Library Caltech 機器學習視頻教程庫，每個課題一個視頻
+Analytics, Data Mining, and Data Science 數據挖掘名站
+http://www. datasciencecentral.com/ 數據科學中心網站
+機器學習入門資源不完全匯總東拉西扯
+一些好東西，入門前未必看得懂，要等學有小成時再看才能體會。
+機器學習與數據挖掘的區別
+•	機器學習關注從訓練數據中學到已知屬性進行預測
+•	數據挖掘側重從數據中發現未知屬性
+Dan Levin, What is the difference between statistics, machine learning, AI and data mining?
+•	If there are up to 3 variables, it is statistics.
+•	If the problem is NP-complete, it is machine learning.
+•	If the problem is PSPACE-complete, it is AI.
+•	If you don't know what is PSPACE-complete, it is data mining.
+幾篇高屋建瓴的機器學習領域概論,參見原文
+•	The Discipline of Machine LearningTom Mitchell 當年為在CMU建立機器學習系給校長寫的東西。
+•	A Few Useful Things to Know about Machine Learning Pedro Domingos教授的大道理，也許入門時很多概念還不明白，上完公開課後一定要再讀一遍。
+幾本好書
+•	李航博士的《統計學習方法》一書前段也推薦過，給個豆瓣的鏈接
+
+發佈於2015-07-05
