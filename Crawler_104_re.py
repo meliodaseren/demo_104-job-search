@@ -28,11 +28,13 @@ with sqlite3.connect('job.sqlite') as conn:
     # 20 job hrefs in each page, but only get page 150
     # href selector
     # soup.select('div.jobname_summary')[0].select('a')[0]['href']
-def getPage104(href):
-    res = r.get(href)
-    totalPages = int(
-        BeautifulSoup(res.text, 'lxml').select('form#jobform')[0].select('ul')[0].select('li')[0].text.split('筆')[0][1:].strip())
+def getPage(href):
+    res = requests.get(href)
+    # 2017/7/11 23:30 共 20275 筆
+    totalPages = int(BeautifulSoup(res.text, 'lxml').select('form#jobform')[0].select('ul')[0]
+                                                    .select('li')[0].text.split('筆')[0][1:].strip())
     res.close()
+    # 20 job hrefs in each page, but only get page 150
     totalPages = 150 if math.ceil(totalPages / 20) > 150 else math.ceil(totalPages / 20)
     return totalPages
 

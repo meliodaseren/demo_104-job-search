@@ -9,8 +9,8 @@ import threading
 # href selector
 # soup.select('div.jobname_summary')[0].select('a')[0]['href']
 
-# The function to get each job page url
-def getPage(href):
+# The function to get total pages
+def getTotalPage(href):
     res = requests.get(href)
     # 2017/7/11 23:30 共 20275 筆
     totalPages = int(BeautifulSoup(res.text, 'lxml').select('form#jobform')[0].select('ul')[0]
@@ -24,7 +24,7 @@ def getPage(href):
 # The function to get job information
 def job_info(href):
     try:
-        time.sleep(3)
+        time.sleep(5)
 
         res = requests.get(href)
         soup = BeautifulSoup(res.text, "html5lib")  # Error lxml, html.parser
@@ -32,8 +32,9 @@ def job_info(href):
 
         if soup.select('head > title') != "104人力銀行─錯誤頁":
 
-            job_company = soup.select('a')[1].text
+            job_company = soup.select('a')[1].text  # 公司名稱
             job_content = soup.select('div[class="content"] > p')[0].text  # 工作內容
+            job_uptime = soup.select('time[class="update"]')[0].text
 
             reqs = soup.find_all(["dt", "dd"])
             # print(reqs)
@@ -49,15 +50,12 @@ def job_info(href):
                 elif "其他條件" in reqs[i].text:
                     other_con += reqs[i + 1].text
 
-            print("公司名稱：" + job_company)
-            print("--" * 30)
-            print("工作內容\n" + job_content)
-            print("--" * 30)
-            print("擅長工具：" + job_tools)
-            print("--" * 30)
-            print("工作技能：" + job_skills)
-            print("--" * 30)
-            print("其他條件\n" + other_con)
+            print("* 公司名稱：" + job_company)
+            print("* 工作內容\n" + job_content)
+            print("* 擅長工具：" + job_tools)
+            print("* 工作技能：" + job_skills)
+            print("* 其他條件\n" + other_con)
+            print("* " + job_uptime)
 
         else:
             print("404 Not Found")
@@ -69,8 +67,8 @@ def job_info(href):
         print("Other Exception: " + href)
 
 
-# 資訊軟體系統類 total job pages
-totalPages = getPage('https://www.104.com.tw/jobbank/joblist/joblist.cfm?jobsource=n104bank1&ro=0&jobcat=2007000000&order=2&asc=0&page=1')
+# 資訊軟體系統類
+totalPages = getTotalPage('https://www.104.com.tw/jobbank/joblist/joblist.cfm?jobsource=n104bank1&ro=0&jobcat=2007000000&order=2&asc=0&page=1')
 print('Total Pages: ' + str(totalPages))
 
 
@@ -92,6 +90,6 @@ for page in range(1, totalPages + 1):
         job_info(href)
         print("--" * 50)
 
-    time.sleep(3)
+    time.sleep(5)
 
 print(str(totalPages) + 'Done.')
