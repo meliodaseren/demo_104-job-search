@@ -1,4 +1,4 @@
-import requests as r
+import requests
 import sqlite3
 import math
 import time
@@ -62,7 +62,7 @@ def insert_href(title, href):
         print(href)
 
 
-totalPages = getPage104(
+totalPages = getPage(
     'https://www.104.com.tw/jobbank/joblist/joblist.cfm?jobsource=n104bank1&ro=0&jobcat=2007000000&order=2&asc=0&page=1')
 print('Total Pages: ' + str(totalPages))
 for page in range(1, totalPages + 1):

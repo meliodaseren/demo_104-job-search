@@ -14,7 +14,7 @@ while True:
     soup = bs(browser.page_source, 'lxml')
     # tmp1 = soup.select('li > div > a')[4:] #li > div > a
     # print(browser.find_element('li > div > a'))
-    tmp2 = soup.findAll(attrs={"class": "jobname_summary job_name"})
+    tmp2 = soup.findAll(attrs = {"class": "jobname_summary job_name"})
     tmp3 = tmp2
     count = 1
     for ti in tmp3:
