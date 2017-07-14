@@ -61,4 +61,3 @@ def job_info(href):
         print("Other Exception: " + href)
 
 job_info("https://www.104.com.tw/job/?jobno=5ezog&jobsource=104_hotorder")
-

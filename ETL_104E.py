@@ -1,13 +1,13 @@
-from bs4 import BeautifulSoup as bs
+from bs4 import BeautifulSoup
 import requests
 
-res = requests.get('https://www.104.com.tw/job/?jobno=4twky&jobsource=104_hotorder')
-soup = bs(res.text, 'lxml')
+res = requests.get('https://www.104.com.tw/job/?jobno=5ezog&amp;jobsource=104_hotorder')
+soup = BeautifulSoup(res.text, 'lxml')
 
 # keyword = ['公司福利', '工程師']
 # level =['專科', '大學', '碩士']
 # lang = ['不拘', 'linux', 'java', 'javascript', 'mysql', 'ms sql', 'android', 'jsp',\
-#         'ios app', 'c', 'c++', 'python', 'ruby'] + level + keyword
+#         'ios app', 'c', 'c++', 'python', 'ruby', 'scala', 'hadoop', 'spark'] + level + keyword
 
 lang = ['不拘', 'linux', 'java', 'javascript', 'mysql', 'ms sql', 'android', 'jsp',\
         'ios app', 'c', 'c++', 'python', 'ruby', 'scala', 'hadoop', 'spark']

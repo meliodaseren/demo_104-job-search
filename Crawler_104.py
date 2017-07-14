@@ -162,7 +162,6 @@ for page in range(1, totalPages + 1):
 
     time.sleep(5)
 
-
 print(job_lists_dict)
 
 print(str(totalPages) + 'Done.')
