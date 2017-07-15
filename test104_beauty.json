@@ -1,0 +1,438 @@
+{
+    "lists_url": "https://www.104.com.tw/jobbank/joblist/joblist.cfm?jobsource=n104bank1&ro=0&jobcat=2007001011&isnew=3&order=2&asc=0&page=1",
+    "total_pages": 3,
+    "lists_title": "BIOS工程師",
+    "job_lists": [{
+        "title": "系統整合事業部_BIOS測試工程師(契約)",
+        "url": "https://www.104.com.tw/job/?jobno=4mj2z&jobsource=n104bank1&hotjob_chr=",
+        "company": "光寶科技股份有限公司",
+        "content": "協助BIOS測試等作業",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-14",
+        "other_condition": "未填寫"
+    }, {
+        "title": "SS SDV _ BIOS測試工程師 (契約)",
+        "url": "https://www.104.com.tw/job/?jobno=4w8y7&jobsource=n104bank1&hotjob_chr=",
+        "company": "光寶科技股份有限公司",
+        "content": "協助BIOS測試等作業",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-14",
+        "other_condition": "未填寫"
+    }, {
+        "title": "BIOS 工程師",
+        "url": "https://www.104.com.tw/job/?jobno=57n84&jobsource=n104bank1&hotjob_chr=",
+        "company": "威強電工業電腦股份有限公司",
+        "content": "x86系統BIOS設計開發",
+        "tools": "Excel、Outlook、PowerPoint、Word、中文打字20~50、英文打字20~50",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-14",
+        "other_condition": "1．熟悉C語言，同時熟悉組合語言更佳.2．具Legacy/uEFI BIOS開發相關經驗 or 至少 1 年 firmware 開發經驗者尤佳。3．熟悉C/C++ or Assembly Language, PC Hardware Architecture4．熟悉X86系統架構並能理解硬體線路圖."
+    }, {
+        "title": "BIOS工程師(SE100)",
+        "url": "https://www.104.com.tw/job/?jobno=4ndwo&jobsource=n104bank1&hotjob_chr=",
+        "company": "奇鋐科技股份有限公司",
+        "content": "1.擔任專案中BIOS owner 負責review and check 主板端的solution 是否正確2.在專案中負責對客戶端的技術窗口 以及跟主板供應商合作完成BIOS設計  3.Follow新的platform BIOS 相關新的技術4.Review 板端BIOS issue and solution5.了解EC FW and BIOS 之間的運作",
+        "tools": "不拘",
+        "skills": "BIOS工程規格及流程撰寫、撰寫硬體語言程式",
+        "post_date": "更新日期：2017-07-14",
+        "other_condition": "1.DT/AIO BIOS設計經驗 6年以上2.熟悉AMI UEFI code3.對主板硬體架構有基本認知4.大學軟體相關科系畢業5.針對BIOS問題的分析以及解決的能力"
+    }, {
+        "title": "NB Bios Engineer / 軟體工程師",
+        "url": "https://www.104.com.tw/job/?jobno=3k3w4&jobsource=n104bank1&hotjob_chr=",
+        "company": "香港商聯寶電腦有限公司台灣分公司",
+        "content": "1. 負責軟體分析、設計以及程式撰寫。\n2. 規劃執行軟體架構及模組之設計，並控管軟體設計進度。\n3. 進行軟體測試與修改。\n4. NB產品BIOS/相關韌體設計與開發。",
+        "tools": "C、C++、Java",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-14",
+        "other_condition": "1. 電機電子工程相關、資訊工程相關.\n2. 具備1-3年NB BIOS軟體設計或相關產品軟/韌體設計經驗佳 (無經驗可).\n3. 熟悉X86、組合語言及C語言.\n4. 英文溝通能力佳.\n5. 能配合短期出差."
+    }, {
+        "title": "NB Software Engineer / 軟體工程師",
+        "url": "https://www.104.com.tw/job/?jobno=5es51&jobsource=n104bank1&hotjob_chr=",
+        "company": "香港商聯寶電腦有限公司台灣分公司",
+        "content": "1. 負責軟體之分析、設計以及程式撰寫。\n2. 規劃執行軟體架構及模組之設計，並控管軟體設計進度。\n3. 進行軟體之測試與修改。\n4. NB產品BIOS/相關韌體之設計與開發。",
+        "tools": "C",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-14",
+        "other_condition": "1. 電機電子工程相關、資訊工程相關、電機電子工程相關\n2. 具備1年以上NB BIOS軟體設計或相關產品軟/韌體設計經驗.\n3. 熟悉X86、組合語言及C語言\n4. 英文溝通能力佳\n5. 能配合短期出差"
+    }, {
+        "title": "軟韌體工程師",
+        "url": "https://www.104.com.tw/job/?jobno=4qshu&jobsource=n104bank1&hotjob_chr=",
+        "company": "力浦電子實業股份有限公司",
+        "content": "1.負責軟韌體程式撰寫與測試。2.於既有的產品上進行軟韌體的維護與新增功能。",
+        "tools": "C、C++",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-14",
+        "other_condition": "未填寫"
+    }, {
+        "title": "《研發-SW》BIOS高級工程師(外派-深圳)",
+        "url": "https://www.104.com.tw/job/?jobno=44d77&jobsource=n104bank1&hotjob_chr=",
+        "company": "立端科技股份有限公司",
+        "content": "1. Maintain Legacy/UEFI BIOS Projects.\n2. Co-work and debug BIOS issues among hardware/firmware/software engineering.\n3. Implement BIOS feature for customer request.",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-14",
+        "other_condition": "1.具跨部門溝通能力並能發揮團隊合作精神者。\n2.具問題解決能力，能站在公司及客戶的立場思考，讓雙方達雙贏之局面者。\n3.主動積極、具正向思考、做事細心、有耐心且可獨立作業者。\n4. C、C++、Assembly語言撰寫能力."
+    }, {
+        "title": "Server BIOS工程師",
+        "url": "https://www.104.com.tw/job/?jobno=4ti6p&jobsource=n104bank1&hotjob_chr=",
+        "company": "永擎電子股份有限公司",
+        "content": "從事Server主機板BIOS撰寫及修改工作。1. 開發、維護以及改善主機板BIOS 程式。 2. 導入主機板相關零件控制方法。3. 負責BIOS程式偵錯與問題解決。 4. 回覆客戶或相關部門BIOS技術問題。 5. 協助FAE（field application engineer）解決問題。 6. 與客戶溝通客製化需求、時程安排",
+        "tools": "C#、C++",
+        "skills": "BIOS程式研發、軟體工程系統開發",
+        "post_date": "更新日期：2017-07-14",
+        "other_condition": "1.熟Windows/Linux AP, Driver.2.具備軟體撰寫工作經驗者優先面試"
+    }, {
+        "title": "Server BIOS 測試工程師",
+        "url": "https://www.104.com.tw/job/?jobno=4ti62&jobsource=n104bank1&hotjob_chr=",
+        "company": "永擎電子股份有限公司",
+        "content": "1.規劃測試計畫與測試案例（test case）。2.測試與驗證系統功能、相容性、效能、壓力承載、可靠度等。3.建立測試環境，撰寫、維護、改善測試程式。4.分析測試資料、釐清問題、提出改善建議，並撰寫測試報告。5.維護相關測試設備。",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-14",
+        "other_condition": "未填寫"
+    }, {
+        "title": "(MR11-B065) BIOS工程師",
+        "url": "https://www.104.com.tw/job/?jobno=477q3&jobsource=n104bank1&hotjob_chr=",
+        "company": "新漢股份有限公司",
+        "content": "1. 工業電腦產品及專案的BIOS開發。\n2. 維護與改善已量產的產品和機種。",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-14",
+        "other_condition": "1. 工程學科、資訊工程相關科系畢。\n2. 對本工作有興趣者，無經驗可。"
+    }, {
+        "title": "Server 資深BIOS工程師(桃園)",
+        "url": "https://www.104.com.tw/job/?jobno=3yxhq&jobsource=n104bank1&hotjob_chr=",
+        "company": "Inventec_英業達股份有限公司",
+        "content": "- Server platform UEFI/BIOS coding, porting, debug, problem-solving and maintenance.- UEFI/BIOS Functions research and development - Provide Customer service on server platform UEFI/BIOS design field.- Program Team Communication and Project Management",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-14",
+        "other_condition": "熟悉AMI Code Base - Aptio V"
+    }, {
+        "title": "BIOS韌體高級工程師",
+        "url": "https://www.104.com.tw/job/?jobno=5di0v&jobsource=n104bank1&hotjob_chr=",
+        "company": "Inventec_英業達股份有限公司",
+        "content": "1. Intel x86 CPU board bring-up 2. BIOS firmware development (UEFI) & FW and document release3. Issue analysis/debugging and feature behavior clarification4. Know-how of BIOS basic features (EX: ACPI, SMBIOS, GPIO, I2C, PCIe and so on) and ME config.",
+        "tools": "Linux、C",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-14",
+        "other_condition": "未填寫"
+    }, {
+        "title": "Server UEFI/BIOS 設計工程師(桃園)",
+        "url": "https://www.104.com.tw/job/?jobno=j51&jobsource=n104bank1&hotjob_chr=",
+        "company": "Inventec_英業達股份有限公司",
+        "content": "- Server platform UEFI/BIOS coding, porting, debug, problem-solving and maintenance.- UEFI/BIOS Functions research and development - Provide Customer service on server platform UEFI/BIOS design field.",
+        "tools": "C、C++、Visual Studio、Assembly",
+        "skills": "BIOS程式研發、BIOS程式偵錯與維護、韌體程式設計、微電腦軟體設計",
+        "post_date": "更新日期：2017-07-14",
+        "other_condition": "了解 x86 Computer Architecture and Organization英文佳，了解x86 PC架構，有C/Assembly程式寫作經驗, UEFI經驗佳"
+    }, {
+        "title": "Server UEFI/BIOS leader(桃園)",
+        "url": "https://www.104.com.tw/job/?jobno=32a8z&jobsource=n104bank1&hotjob_chr=",
+        "company": "Inventec_英業達股份有限公司",
+        "content": "- Server platform UEFI/BIOS coding, porting, debug, problem-solving and maintenance.- UEFI/BIOS Functions research and development - Provide Customer service on server platform UEFI/BIOS design field.- Program Team Communication and Project Management",
+        "tools": "C、C++、Visual Studio、Assembly",
+        "skills": "BIOS程式研發、BIOS程式偵錯與維護、韌體程式設計、微電腦軟體設計",
+        "post_date": "更新日期：2017-07-14",
+        "other_condition": "熟悉　ARM or x86 Computer Architecture and Organization, Data StructureUEFI Design 經驗英文佳，熟悉伺服器架構，三年以上有OEM/ODM客戶服務及專案開發經驗者佳"
+    }, {
+        "title": "[MS] Software Development Engineer(微軟RD約聘人員)-105JP",
+        "url": "https://www.104.com.tw/job/?jobno=4mz2q&jobsource=n104bank1&hotjob_chr=",
+        "company": "萬寶華企業管理顧問股份有限公司",
+        "content": "You have chance to work on the latest Windows /Phone platform, latest Windows IoT Core, Azure Cloud and the latest IoT devices. Your main activities are- Working on Universal World Platform (UWP) application and UI design- Working on latest HTML technology, Web service and Web app etc.- Working with partners on Windows driver development in the Wireless, Storage, Camera, Sensors and Audio etc areas..- Working with partners on BIOS/UEFI area to bring up new platform- Working with partners on end to end solution in the IoT and Microsoft Azure.- Working with partners on bringing up embedded system and IoT platform.- Debug issues and drive issue to final resolution. - Deliver training/workshop to enable partners on developing Windows Drivers and platform bring up.",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-14",
+        "other_condition": "Requirements:• At least 3 years Windows application development, Windows driver development and BIOS/UEFI experiences on Windows/Windows Phone Platform.• Familiar with Windows debug tools e.g. WHCK, ADK, Windbg • Strong issues analysis and debugging skill• Good understanding on Windows kernel, WDM/KMDF/UMDF• Cross-group communication and collaboration skills with internal and external partners• Knowledge on embedded system, IoT and Windows driver development in Wireless, Storage Camera, Sensors and Audio, and BIOS, UEFI or Board/Phone bring-up is a plus• Required: BA/BS degree in Computer Science or a related technical discipline."
+    }, {
+        "title": "BIOS工程師_6558",
+        "url": "https://www.104.com.tw/job/?jobno=5ibqk&jobsource=n104bank1&hotjob_chr=",
+        "company": "和碩集團_和碩聯合科技股份有限公司",
+        "content": "BIOS Porting on DT/AIO with C language",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-13",
+        "other_condition": "未填寫"
+    }, {
+        "title": "BIOS工程師_6408",
+        "url": "https://www.104.com.tw/job/?jobno=5ep9e&jobsource=n104bank1&hotjob_chr=",
+        "company": "和碩集團_和碩聯合科技股份有限公司",
+        "content": "BIOS Porting on DT/AIO with C language",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-13",
+        "other_condition": "未填寫"
+    }, {
+        "title": "BIOS研發工程師_6293",
+        "url": "https://www.104.com.tw/job/?jobno=5c1mk&jobsource=n104bank1&hotjob_chr=",
+        "company": "和碩集團_和碩聯合科技股份有限公司",
+        "content": "1.BIOS programming (in C/C++ language)2.Noteboot project3. NB IOS functions implement, UEFI porting4.BIOS, UEFI, System Tools development",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-13",
+        "other_condition": "未填寫"
+    }, {
+        "title": "BIOS 韌體工程師_6563",
+        "url": "https://www.104.com.tw/job/?jobno=5iqdw&jobsource=n104bank1&hotjob_chr=",
+        "company": "和碩集團_和碩聯合科技股份有限公司",
+        "content": "開發與維護專案 BIOS 韌體。",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-13",
+        "other_condition": "未填寫"
+    }, {
+        "title": "韌體工程師_6539",
+        "url": "https://www.104.com.tw/job/?jobno=5hjx4&jobsource=n104bank1&hotjob_chr=",
+        "company": "和碩集團_和碩聯合科技股份有限公司",
+        "content": "-從事主機板BIOS撰寫及修改工作。-規劃及執行產品控制單元之設計、產品韌體之撰寫與量產產品韌體之維護，並進行產品韌體之測試，控管韌體設計之進度、品質與成本。-負責軟體的分析、設計、程式撰寫與維護，並進行軟體的測試與修改，以及控管軟體設計進度。",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-13",
+        "other_condition": "C language、Word、PowerPoint、Excel"
+    }, {
+        "title": "BIOS 研發工程師_6590",
+        "url": "https://www.104.com.tw/job/?jobno=5j6ix&jobsource=n104bank1&hotjob_chr=",
+        "company": "和碩集團_和碩聯合科技股份有限公司",
+        "content": "BIOS Porting on DT/AIO with C language",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-13",
+        "other_condition": "科系： 資工/資科/電機/電子/電信/電控/數學/應數"
+    }, {
+        "title": "BIOS工程師_6383/6624",
+        "url": "https://www.104.com.tw/job/?jobno=5e0tb&jobsource=n104bank1&hotjob_chr=",
+        "company": "和碩集團_和碩聯合科技股份有限公司",
+        "content": "從事主機板BIOS撰寫及修改工作。 - 規劃及執行產品控制單元之設計、產品韌體之撰寫與量產產品韌體之維護，並進行產品韌體之測試，控管韌體設計之進度、品質與成本。 - 負責軟體的分析、設計、程式撰寫與維護，並進行軟體的測試與修改， 以及控管軟體設計進度。",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-13",
+        "other_condition": "熟悉C / C++ / Word / power point / excel"
+    }, {
+        "title": "嵌入式系統工程師",
+        "url": "https://www.104.com.tw/job/?jobno=5gxad&jobsource=n104bank1&hotjob_chr=",
+        "company": "鐳揚創智科技股份有限公司",
+        "content": "1、負責Router/WiFi晶片驅動程式設計開發。\n2、負責Linux kernel相關應用與開發。\n3、負責Router/WiFi晶片平台開發。",
+        "tools": "Linux、Android、C、C++、Assembly、Drivers、Firmware",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-13",
+        "other_condition": "1、有driver或kernel (任何operating system) 或embedded system 開發相關經驗。\n2、熟悉Embedded Linux openwrt 。\n3、熟悉ARM、MISP或其他RISC CPU架構。\n4、有DTV or STB or Router or WiFi晶片驅動或其系統軟體開發經驗。\n5、有平台架構規畫、評估與IC驗證經驗。\n6、有性能優化與除錯設計經驗。\n7. 系統之韌體程式開發設計 \n8. 熟悉聯發科 7688 晶片開發相關經驗"
+    }, {
+        "title": "system software engineer",
+        "url": "https://www.104.com.tw/job/?jobno=4ksi9&jobsource=n104bank1&hotjob_chr=",
+        "company": "晶心科技股份有限公司",
+        "content": "我們是晶心科技軟體設計部系統整合組\n公司致力於開發32/64位元處理器為核心的系統晶片設計平台\n\n系統整合組的主要工作內容為\n1. Linux and RTOS kernel development, porting, optimization to Andes architecture\n2. OS driver development\n3. Auto build/test system development\n4. glibc/uclibc/musl development\n5.     System performance evaluation\n6.     Debugging module development\n7.     OpenWRT/Application porting and optimization",
+        "tools": "Linux、Shell、UNIX、C、C++、Perl、Python、Assembly、Drivers、Firmware、VM",
+        "skills": "作業系統基本操作、BIOS工程規格及流程撰寫、BIOS程式研發、BIOS程式偵錯與維護、系統架構規劃、系統整合分析、韌體工程開發、網路資料傳輸、通訊工程技術開發、無線通訊技術開發、功能測試(function test)、軟體整合測試、無線通訊模組測試、硬體整合測試、韌體整合測試、壓力測試(stress test)、軟體程式設計、韌體程式設計、網路程式設計、模組化系統設計",
+        "post_date": "更新日期：2017-07-13",
+        "other_condition": "具備glibc/uclibc/musl tls nptl, python, RTOS, Linux kernel memory management, system bringup or device driver開發經驗者加分"
+    }, {
+        "title": "新幹班-D01-韌體設計工程師(土城)",
+        "url": "https://www.104.com.tw/job/?jobno=4qjqj&jobsource=n104bank1&hotjob_chr=",
+        "company": "鴻海精密工業股份有限公司",
+        "content": "1.EFI BIOS develop2.BIOS Customize feature implement3.OEM e-Module function implement",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-13",
+        "other_condition": "★工作經驗2年以下或應屆畢業生★1.技能：熟悉 C/C++ 語言、 x86組合語言2.基礎知識：對PC架構熟悉;有基本的電子電路知識,能研讀晶片規格書 3.其它： 中/英文聽說讀寫"
+    }, {
+        "title": "BIOS工程師/高級工程師",
+        "url": "https://www.104.com.tw/job/?jobno=48wav&jobsource=n104bank1&hotjob_chr=",
+        "company": "磐儀科技股份有限公司",
+        "content": "1. 專案的BIOS研發及維護 \n2. 應用程式或測試工具的撰寫及維護\n3. 替客戶解決問題 \n4. 完成主管交代任務\n\n職務需求：\n1. 具Legacy / UEFI BIOS 開發經驗者佳\n2. 熟悉Windows等作業系統及電腦架構\n3. 溝通協調、應變表達與學習力強\n4. 配合度高、細心負責且抗壓性高\n5. 可獨立作業者佳",
+        "tools": "C、C++、Assembly",
+        "skills": "BIOS工程規格及流程撰寫、BIOS程式研發、BIOS程式偵錯與維護",
+        "post_date": "更新日期：2017-07-13",
+        "other_condition": "未填寫"
+    }, {
+        "title": "BIOS 資深工程師",
+        "url": "https://www.104.com.tw/job/?jobno=31vca&jobsource=n104bank1&hotjob_chr=",
+        "company": "英屬維京群島商百崴宇智股份有限公司台灣分公司",
+        "content": "1. 開發、維護主機板 BIOS 程式。\n2. 負責 BIOS 程式偵錯與問題解決。\n3. 回覆客戶或相關部門BIOS技術問題。",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-13",
+        "other_condition": "1. 熟PC架構, C/C++, 或 Assembley\n2. 需具備BIOS開發經驗.\n3. 具 UEFI / Award BIOS 或 AMI BIOS 經驗者佳."
+    }, {
+        "title": "(MR11-B065) BIOS高級工程師/技術副理",
+        "url": "https://www.104.com.tw/job/?jobno=3qtpw&jobsource=n104bank1&hotjob_chr=",
+        "company": "新漢股份有限公司",
+        "content": "1. 工業電腦產品及專案的BIOS開發。\n2. 維護與改善已量產的產品和機種。",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-13",
+        "other_condition": "1. C/C++。\n2. 熟AMI UEFI BIOS 者佳。"
+    }, {
+        "title": "(IR40-B039) BIOS技術副理 -IBG",
+        "url": "https://www.104.com.tw/job/?jobno=3ymdx&jobsource=n104bank1&hotjob_chr=",
+        "company": "新漢股份有限公司",
+        "content": "工業電腦產品BIOS開發及維護。",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-13",
+        "other_condition": "1. 6年以上BIOS開發經驗。\n2. 具AMI EFI BIOS開發經驗者。\n3. 具備獨力完成BIOS規劃及Project執行之能力者。"
+    }, {
+        "title": "軟體研發--Bios工程師",
+        "url": "https://www.104.com.tw/job/?jobno=5a9u4&jobsource=n104bank1&hotjob_chr=",
+        "company": "智邦科技股份有限公司",
+        "content": "1.AMI UEFI BIOS development and debugging.2.Clarify uncertain issue among hardware, software, BIOS and firmware.3.Able to study new technical spec. and provide solutions accordingly.",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-13",
+        "other_condition": "Familiar with x86 system BIOS architecture experience."
+    }, {
+        "title": "【BIOS】BIOS Engineer(中和)-TC15289",
+        "url": "https://www.104.com.tw/job/?jobno=26m9g&jobsource=n104bank1&hotjob_chr=",
+        "company": "Super Micro Computer, Inc._美超微電腦股份有限公司",
+        "content": "1.Clarify uncertain issue among hardware, software, BIOS and firmware.2.Maintain Legacy/UEFI BIOS source codes used in company.3.Develop UEFI BIOS for motherboards kicking off by company.4.Save source codes to SVN database per company security requirement.5.Coordinate with hardware engineers and vendors to narrow down issues and pursue the goals of the project.6.Respond to customer BIOS issue and perform other BIOS projects as assigned by manager.",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-13",
+        "other_condition": "1.Bachelor of Computer Science and BIOS Programming/Development."
+    }, {
+        "title": "【BIOS】Software Engineer(中和)-TC16260",
+        "url": "https://www.104.com.tw/job/?jobno=3z0wh&jobsource=n104bank1&hotjob_chr=",
+        "company": "Super Micro Computer, Inc._美超微電腦股份有限公司",
+        "content": "Essential Duties and Responsibilities:\n1.Develop application tools and test infrastructure to verify BIOS and IPMI features and functions implemented on each kinds of X86 based main boards automatically.  \n2.Design Web GUI interfaces to let engineers set test configuration and start UUT test easily, and manager or engineers can monitor all of test statuses and reports locally or remotely via this interfaces validly.",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-13",
+        "other_condition": "Qualifications:\n1.C, Shell script, Windows batch. \n2.Windows and Linux installations and operations.\n3.Develop CLI and GUI application tools running in DOS, Windows, Linux and UEFI shell platforms.\n4.Test BIOS/IPMI functions\n5.Access of IO, memory and PCI configuration space \n6.SMBIOS, PCI, UEFI, IPMI specifications"
+    }, {
+        "title": "BIOS (資深)工程師 工作地點 – 林口或內湖",
+        "url": "https://www.104.com.tw/job/?jobno=ea5g&jobsource=n104bank1&hotjob_chr=",
+        "company": "Advantech_研華股份有限公司",
+        "content": "ABLE Club從「心」出發落實研華美滿人生研華ABLE Club─美滿人生俱樂部中的「ABLE」一字，象徵的是Advantech Beautiful LifE，研華員工不只是樂在工作，從中獲得滿滿的成就感和認同感；在工作之餘，也能藉由ABLE Club豐富而多采多姿的活動，將「愛」與家人、同事、和其他社福團體分享，把幸福快樂的氛圍從自身散發出去，逐漸感染整個社會。透過福委會和社團精心設計的各種活動，我們的愛從研華擴及到了研華眷屬；透過服務他人、利他的服務活動，我們的愛心無遠弗屆，傳遞到社會的每個角落；透過基金會產學合作平台，我們用愛灌溉社會的青年幼苗，讓他們逐漸長成枝繁葉茂的高聳樹木，用所學回饋社會；透過研華ABLE Club，我們的愛成就了研華人的美滿人生，無私的愛心也就此傳送出去，讓更多人一起迎向美滿的人生!◆ 分紅/配股1.員工紅利: 個人績效獎金、團體績效獎金◆ 獎金/禮品類1.年終獎金2. 端午節及中秋節禮品3. 生日禮金4. 推薦人才獎金◆ 保險類1.勞保2.健保3.團體保險：壽險、意外險、意外醫療險、住院險、重大疾病險、癌症險、職業災害險◆ 休閒類1.客制化的員工福利制度, 包括國內旅遊、國外旅遊、電影欣賞、雜誌訂閱、餐券及住宿券等2.部門聚餐補助金3.每季慶生會4.社團活動5. 藝文欣賞6. 每日tea time, 提供無限暢飲飲料◆ 制度類1.客觀的績效評核制度2.完整的教育訓練3.順暢的升遷管道◆ 設備類1.員工餐廳◆ 請 / 休假制度1.週休二日2.特休/年假3. 一年五天不扣薪病假◆ 其他1.年度健康檢查2.特約商店◆ 補助類1. 結婚禮金2. 生產禮金3. 住院禮金",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-13",
+        "other_condition": "1.BIOS coding experience.2. Single Chip coding/design experience3. Familiar with Assembly and C language"
+    }, {
+        "title": "BIOS-NCG",
+        "url": "https://www.104.com.tw/job/?jobno=3y40t&jobsource=n104bank1&hotjob_chr=",
+        "company": "Advantech_研華股份有限公司",
+        "content": "經歷 : 熟AMI UEFI BIOS, BIOS engineer相關工作經驗三年以上.學歷 : 大學以上,熟C language",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-13",
+        "other_condition": "未填寫"
+    }, {
+        "title": "【新鮮人招募】BIOS軟體研發工程師(南港)- RDC",
+        "url": "https://www.104.com.tw/job/?jobno=5l7cy&jobsource=n104bank1&hotjob_chr=",
+        "company": "神基科技股份有限公司",
+        "content": "Ultimate Computing Solution For Demanding ProfessionalsGetac rugged computing solution business unit provides advanced rugged computing solution to help all the professionals accomplish their missions and surpass their limits. Getac rugged brand is ranked as the world’s second largest fully rugged mobile computing solutions provider.神基科技歡迎資工 / 電機電子相關背景的您，一同加入全球第二大之攜帶式強固型電腦製造商和品牌商。在這個職務裡，您將經歷強固型電腦相關產品，包括筆記型電腦、平板電腦的硬體相關設計，這當中將包含以下類別:1.system Bios開發設計與維護2.產品軟體相關問題分析與解決",
+        "tools": "C、C#",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-12",
+        "other_condition": "歡迎熱忱、願意學習的您一起加入研發的行列"
+    }, {
+        "title": "系統整合事業部_BIOS資深工程師",
+        "url": "https://www.104.com.tw/job/?jobno=4c6ie&jobsource=n104bank1&hotjob_chr=",
+        "company": "光寶科技股份有限公司",
+        "content": "-Intel x86 PC BIOS porting-Build BIOS Image files-Fix BIOS bugs-Create and implement the new BIOS feature for customers-Customize BIOS for Customer-Co-work with Hardware Engineer",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-12",
+        "other_condition": "未填寫"
+    }, {
+        "title": "【2017研發替代役】軟體研發工程師",
+        "url": "https://www.104.com.tw/job/?jobno=1xgzn&jobsource=n104bank1&hotjob_chr=",
+        "company": "緯創資通股份有限公司",
+        "content": "【工作內容】\n1.各項資訊/通訊產品之BIOS、Firmware、Software、演算法、OS(如Windows、Linux、Android等)軟/韌體研發。\n【工作地點】緯創汐止\n【需求條件】\n1.具2017研發替代役資格\n2.電子、電機、資工、通訊等相關研究所",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-12",
+        "other_condition": "未填寫"
+    }, {
+        "title": "BIOS工程師",
+        "url": "https://www.104.com.tw/job/?jobno=4dz0k&jobsource=n104bank1&hotjob_chr=",
+        "company": "倫飛電腦實業股份有限公司",
+        "content": "1.新專案BIOS研發\n2.舊機種BIOS的支援服務及維護\n3.除錯.添加客製化功能",
+        "tools": "C、C++",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-12",
+        "other_condition": "1.X86、PC架構有深度瞭解。\n2.熟AMI BIOS、C、C++程式語言。\n3.可獨立開發專案。"
+    }, {
+        "title": "MB/BB_韌體/BIOS工程師/技術主管",
+        "url": "https://www.104.com.tw/job/?jobno=858&jobsource=n104bank1&hotjob_chr=",
+        "company": "微星科技股份有限公司",
+        "content": "開發/維護/改善主機板/準系統BIOS 程式。導入主機板相關零件控制方法。負責BIOS程式偵錯與問題解決。回覆客戶或相關部門BIOS技術問題。",
+        "tools": "C、Firmware",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-12",
+        "other_condition": "- C or Assembly experience- 熟悉EC者尤佳"
+    }, {
+        "title": "應用軟體開發工程師",
+        "url": "https://www.104.com.tw/job/?jobno=5ef0z&jobsource=n104bank1&hotjob_chr=",
+        "company": "微星科技股份有限公司",
+        "content": "1.開發，維護，更新，調試廠線或台北所需的應用工程。\n2.協助處理客戶回饋問題。",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-12",
+        "other_condition": "C/C++, 各種 Script(batch,Autoit,Javascript,Wscript,VBscript,VBA,perl...), Assembly, \n熟悉(PC, Motherboard)架構與功能(週邊I/O接口,PCI, USB, PCI-E, SMBUS, BIOS, and so on)  \nOS: Dos, Windows, Linux"
+    }, {
+        "title": "筆記型電腦BIOS韌體主管/專員/工程師 - J0169",
+        "url": "https://www.104.com.tw/job/?jobno=1x22v&jobsource=n104bank1&hotjob_chr=",
+        "company": "廣達電腦股份有限公司",
+        "content": "1.筆記型電腦BIOS韌體設計 \n2.嵌入式系統韌體研發",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-12",
+        "other_condition": "1.具ASSEMBLY及C/C++語言基礎  \n2.大學以上資工/資訊/電子/電機相關科系畢\n3.有韌體相關開發經驗者佳\n4.具NB / AIO PC / DT PC軟體設計3年以上經驗者佳\n5.具英文說寫讀能力.\n6.能配合短期出差"
+    }, {
+        "title": "雲端應用伺服器 BIOS 主管/專員/工程師 - J0332",
+        "url": "https://www.104.com.tw/job/?jobno=27q3u&jobsource=n104bank1&hotjob_chr=",
+        "company": "廣達電腦股份有限公司",
+        "content": "1. BIOS porting\n2. Co-work with Hardware R&D for problem fixing  \n3. Provide technical consultation to related colleague, such as Sales, Marketing, etc.\n4. Discuss BIOS specifications with customers",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-12",
+        "other_condition": "1. Familiar with programming languages(Assembly, C-language)\n2. Familiar with computer architecture\n3. With at least 2 year working experience for Engineer and 6 years for Specialist\n4. Good at English communication in listening, writing, reading and speaking"
+    }, {
+        "title": "新鮮人專區_軟體_雲端應用伺服器BIOS韌體工程師 - J1337",
+        "url": "https://www.104.com.tw/job/?jobno=5hrec&jobsource=n104bank1&hotjob_chr=",
+        "company": "廣達電腦股份有限公司",
+        "content": "1. BIOS porting\n2. Co-work with Hardware R&D for problem fixing \n3. Provide technical consultation to related colleague, such as Sales, Marketing, etc.\n4. Define and discuss specification, issues, and requirement with Customers",
+        "tools": "C、C++、Assembly",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-12",
+        "other_condition": "1. Familiar with programming languages(Assembly, C-language)\n2. Familiar with computer architecture\n3. Good at English communication in listening, writing, reading and speaking"
+    }, {
+        "title": "新鮮人專區_軟體_筆記型電腦BIOS韌體設計工程師 - J1356",
+        "url": "https://www.104.com.tw/job/?jobno=5jaj6&jobsource=n104bank1&hotjob_chr=",
+        "company": "廣達電腦股份有限公司",
+        "content": "1. 筆記型電腦BIOS韌體設計 \n2. 嵌入式系統韌體研發\n3. 客戶與內部研發單位溝通協調、探討問題點對策及溝通協調",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-12",
+        "other_condition": "1. 具ASSEMBLY及C/C++語言基礎  \n2. 大學以上資工/資訊/電子/電機相關科系畢\n3. 具中等英文說寫讀能力\n4. 能配合短期出差"
+    }, {
+        "title": "軟體工程師(x86 BIOS)",
+        "url": "https://www.104.com.tw/job/?jobno=3z8wj&jobsource=n104bank1&hotjob_chr=",
+        "company": "威盛電子股份有限公司",
+        "content": "x86 BIOS and x86 CPU software developing and porting",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-12",
+        "other_condition": "未填寫"
+    }, {
+        "title": "BIOS工程師",
+        "url": "https://www.104.com.tw/job/?jobno=2d27z&jobsource=n104bank1&hotjob_chr=",
+        "company": "冠信電腦股份有限公司",
+        "content": "韌體研發",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-12",
+        "other_condition": "具PC或NB相關韌體研發經驗"
+    }, {
+        "title": "BIOS主管",
+        "url": "https://www.104.com.tw/job/?jobno=2d274&jobsource=n104bank1&hotjob_chr=",
+        "company": "冠信電腦股份有限公司",
+        "content": "BIOS/軟體設計",
+        "tools": "不拘",
+        "skills": "不拘",
+        "post_date": "更新日期：2017-07-12",
+        "other_condition": "具PC或NB相關韌體研發經驗"
+    }]
+}

@@ -3,7 +3,7 @@
 import json
 
 data = {
-    'name': 'ACME',
+    'name': '中文',
     'shares': 100,
     'price': 542.23
 }
@@ -18,7 +18,16 @@ data2 = json.loads(json_str)
 print(data2)
 print(type(data2))
 
+# Writing JSON data
+# E:\PycharmProjects\workspace\ETL_Demo
+# with open('data.json', 'w') as f:
+#     json.dump(data, f)
+with open('data.json', 'w', encoding='utf8') as f:
+    json.dump(data, f, ensure_ascii=False)
 
+# Reading data back
+# with open('data.json', 'r', encoding='utf8') as f:
+#     data2 = json.load(f, ensure_ascii=False)
 
 
 # json[1] title     職稱
@@ -83,7 +92,7 @@ job_info = {'company': '樂盈資訊國際有限公司',
 
 job_dict.update(job_info)
 
-print(job_dict)
+# print(job_dict)
 
 
 
