@@ -162,9 +162,7 @@ def saveJson(data, fileName):
     with open(fileName, "w", encoding="utf8") as f:
         json.dump(data, f, ensure_ascii=False)
 
-# saveJson(job_lists_dict, "Job_104_1002.json")
 saveJson(job_lists_dict, "Job_104_" + str(jobcat) + ".json")
 
 
-# print(job_lists_dict)
 print(str(totalPages) + " Pages Done.")
