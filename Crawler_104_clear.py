@@ -61,7 +61,7 @@ job_lists_dict = {
 # The function to get job information
 def job_info(href):
     try:
-        time.sleep(3)
+        time.sleep(5)
         res = requests.get(href)
         soup = BeautifulSoup(res.text, "html5lib")  # Error lxml, html.parser
 
@@ -152,7 +152,7 @@ try:
             count += 1
             print("Scraping: " + str(count) + " (" + str(page) + " / " + str(totalPages) + " Pages)")
 
-        time.sleep(3)
+        time.sleep(5)
 finally:
     pass
 
