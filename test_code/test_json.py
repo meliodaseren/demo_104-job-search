@@ -2,6 +2,9 @@
 
 import json
 
+jobcat = 1001
+print("Job_104_" + str(jobcat) + ".json")
+
 data = {
     'name': '中文',
     'shares': 100,
@@ -26,8 +29,8 @@ with open('data.json', 'w', encoding='utf8') as f:
     json.dump(data, f, ensure_ascii=False)
 
 # Reading data back
-# with open('data.json', 'r', encoding='utf8') as f:
-#     data2 = json.load(f, ensure_ascii=False)
+with open('data.json', 'r', encoding='utf8') as f:
+    data2 = json.load(f, ensure_ascii=False)
 
 
 # json[1] title     職稱
@@ -91,8 +94,3 @@ job_info = {'company': '樂盈資訊國際有限公司',
             'post_date': '更新日期：2017-07-12'}
 
 job_dict.update(job_info)
-
-# print(job_dict)
-
-
-

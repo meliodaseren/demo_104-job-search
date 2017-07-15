@@ -64,18 +64,16 @@ def job_info(href):
         time.sleep(3)
         res = requests.get(href)
         soup = BeautifulSoup(res.text, "html5lib")  # Error lxml, html.parser
-        # print(soup)
 
         if soup.select('head > title') != "104人力銀行─錯誤頁":
-            job_company = soup.select('a')[1].text                         # json[3] company   公司名稱
-            job_content = soup.select('div[class="content"] > p')[0].text  # json[4] content   工作內容
-            job_uptime = soup.select('time[class="update"]')[0].text       # json[8] post_data 公布時間
+            job_company = soup.select('a')[1].text
+            job_content = soup.select('div[class="content"] > p')[0].text
+            job_uptime = soup.select('time[class="update"]')[0].text
 
             reqs = soup.find_all(['dt', 'dd'])
-            # print(reqs)
-            job_tools = ""   # json[5] tools  擅長工具
-            job_skills = ""  # json[6] skills 工作技能
-            other_con = ""   # json[7] other  其他條件
+            job_tools = ""
+            job_skills = ""
+            other_con = ""
 
             for i in range(0, len(reqs) - 1):
                 if "擅長工具" in reqs[i].text:
@@ -95,14 +93,6 @@ def job_info(href):
             }
 
             return job_info_dict
-
-            # check output
-            # print("* 公司名稱：" + job_company)
-            # print("* 工作內容\n" + job_content)
-            # print("* 擅長工具：" + job_tools)
-            # print("* 工作技能：" + job_skills)
-            # print("* 其他條件\n" + other_con)
-            # print("* " + job_uptime)
 
         else:
             print("404 Not Found")
@@ -129,8 +119,6 @@ try:
 
         count = 0
 
-        # href selector
-        # soup.select('div.jobname_summary')[0].select('a')[0]['href']
         for jobName in range(0, totalJobname):
             title = soup.select('div.job_name')[jobName].text.strip()
             href = "https://www.104.com.tw" + jobnameSoup[jobName].select('a')[0]['href']
@@ -155,22 +143,11 @@ try:
                 "url": href
             }
 
-            # check output
-            # print(title)  # json[1] title 職稱
-            # print(href)   # json[2] url   工作頁面連結
-            # print("--" * 50)
-            # print(job_dict)
-            # print(job_info(href))
-            # print("--" * 50)
-
             # update dictionary
             job_dict.update(job_info(href))
-            # print(job_dict)
-            # print("--" * 50)
 
             # append dictionary to list
             job_lists_dict["job_lists"].append(job_dict)
-            # print(job_lists_dict["job_lists"])
 
             count += 1
             print("Scraping: " + str(count) + " (" + str(page) + " / " + str(totalPages) + " Pages)")
