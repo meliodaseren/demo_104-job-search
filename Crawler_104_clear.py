@@ -126,6 +126,7 @@ try:
             # -------------------------------------------------------------------------- #
             # Bad ! Need Fixed !
             # Fixed exception: 'NoneType' object is not iterable
+            # Hint: https://www.104.com.tw/job/
             pattern = re.compile(r'https://www.104.com.twhttp://hunter.104.com.tw/.+')
             match = pattern.match(href)
             pattern2 = re.compile(r'https://www.104.com.twhttp://tutor.104.com.tw/.+')
@@ -134,7 +135,7 @@ try:
                 continue  # hunter.104.com.tw
             elif match2:
                 continue  # tutor.104.com.tw
-            elif href == "https://www.104.com.twjavascript:void(0)" :
+            elif href == "https://www.104.com.twjavascript:void(0)":
                 continue  # case.104.com.tw
             # -------------------------------------------------------------------------- #
 

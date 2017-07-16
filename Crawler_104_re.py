@@ -67,9 +67,9 @@ def job_info(href):
         # print(soup)
 
         if soup.select('head > title') != "104人力銀行─錯誤頁":
-            job_company = soup.select('a')[1].text                         # json[3] company   公司名稱
-            job_content = soup.select('div[class="content"] > p')[0].text  # json[4] content   工作內容
-            job_uptime = soup.select('time[class="update"]')[0].text       # json[8] post_data 公布時間
+            job_company = soup.select('a')[1].text                                            # json[3] company   公司名稱
+            job_content = soup.select('div[class="content"] > p')[0].text.replace("\t", " ")  # json[4] content   工作內容
+            job_uptime = soup.select('time[class="update"]')[0].text                          # json[8] post_data 公布時間
 
             reqs = soup.find_all(['dt', 'dd'])
             # print(reqs)
