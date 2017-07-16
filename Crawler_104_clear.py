@@ -1,21 +1,17 @@
 import requests
 import math
 import time
-from bs4 import BeautifulSoup
-import lxml
-import threading
-import re
 import json
+import re
+from bs4 import BeautifulSoup
 
 # ----- Crawler Information ----- #
-
 # index page
 # [資訊軟體系統類]  jobcat=2007000000
 # [軟體╱工程類人員] jobcat=2007001001 - 2007001012
 # [MIS╱網管類人員] jobcat=2007002001 - 2007002008
 jobcat = 1002
 index = "https://www.104.com.tw/jobbank/joblist/joblist.cfm?jobsource=n104bank1&ro=0&jobcat=200700{}&order=2&asc=0&page=1".format(jobcat)
-
 # ------------------------------- #
 
 print("--" * 25)
@@ -62,18 +58,17 @@ job_lists_dict = {
 def job_info(href):
     try:
         time.sleep(5)
-        res = requests.get(href)
-        soup = BeautifulSoup(res.text, "html5lib")  # Error lxml, html.parser
+        soup = BeautifulSoup(requests.get(href).text, "html5lib")  # Error lxml, html.parser
 
         if soup.select('head > title') != "104人力銀行─錯誤頁":
-            job_company = soup.select('a')[1].text
-            job_content = soup.select('div[class="content"] > p')[0].text
-            job_uptime = soup.select('time[class="update"]')[0].text
+            job_company = soup.select('a')[1].text                         # json[3] company   公司名稱
+            job_content = soup.select('div[class="content"] > p')[0].text  # json[4] content   工作內容
+            job_uptime = soup.select('time[class="update"]')[0].text       # json[8] post_data 公布時間
 
             reqs = soup.find_all(['dt', 'dd'])
-            job_tools = ""
-            job_skills = ""
-            other_con = ""
+            job_tools = ""   # json[5] tools  擅長工具
+            job_skills = ""  # json[6] skills 工作技能
+            other_con = ""   # json[7] other  其他條件
 
             for i in range(0, len(reqs) - 1):
                 if "擅長工具" in reqs[i].text:
@@ -123,47 +118,42 @@ try:
             title = soup.select('div.job_name')[jobName].text.strip()
             href = "https://www.104.com.tw" + jobnameSoup[jobName].select('a')[0]['href']
 
-            # -------------------------------------------------------------------------- #
-            # Bad ! Need Fixed !
-            # Fixed exception: 'NoneType' object is not iterable
-            # Hint: https://www.104.com.tw/job/
-            pattern = re.compile(r'https://www.104.com.twhttp://hunter.104.com.tw/.+')
-            match = pattern.match(href)
-            pattern2 = re.compile(r'https://www.104.com.twhttp://tutor.104.com.tw/.+')
-            match2 = pattern2.match(href)
-            if match:
-                continue  # hunter.104.com.tw
-            elif match2:
-                continue  # tutor.104.com.tw
-            elif href == "https://www.104.com.twjavascript:void(0)":
-                continue  # case.104.com.tw
-            # -------------------------------------------------------------------------- #
+            # Fixed Exception: 'NoneType' object is not iterable
+            # hunter.104.com.tw / tutor.104.com.tw / case.104.com.tw
+            href_format = re.compile(r"https://www.104.com.tw/job/.+")
+            match_href = href_format.match(href)
 
-            job_dict = {
-                "title": title,
-                "url": href
-            }
+            if match_href:
 
-            # update dictionary
-            job_dict.update(job_info(href))
+                job_dict = {
+                    "title": title,
+                    "url": href
+                }
 
-            # append dictionary to list
-            job_lists_dict["job_lists"].append(job_dict)
+                # update dictionary
+                job_dict.update(job_info(href))
 
-            count += 1
-            print("Scraping: " + str(count) + " (" + str(page) + " / " + str(totalPages) + " Pages)")
+                # append dictionary to list
+                job_lists_dict["job_lists"].append(job_dict)
+
+                count += 1
+                # Check Crawler
+                print("Scraping: " + str(count) + " (" + str(page) + " / " + str(totalPages) + " Pages)")
+
+            else:
+                continue
 
         time.sleep(5)
 finally:
     pass
 
 
-# Writing JSON data
+# The function to write JSON data
 def saveJson(data, fileName):
     with open(fileName, "w", encoding="utf8") as f:
         json.dump(data, f, ensure_ascii=False)
 
 saveJson(job_lists_dict, "Job_104_" + str(jobcat) + ".json")
 
-
+# Check Crawler
 print(str(totalPages) + " Pages Done.")

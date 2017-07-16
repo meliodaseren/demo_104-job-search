@@ -13,7 +13,7 @@ import json
 # [資訊軟體系統類]  jobcat=2007000000
 # [軟體╱工程類人員] jobcat=2007001001 - 2007001012
 # [MIS╱網管類人員] jobcat=2007002001 - 2007002008
-jobcat = 1001
+jobcat = 1002
 index = "https://www.104.com.tw/jobbank/joblist/joblist.cfm?jobsource=n104bank1&ro=0&jobcat=200700{}&order=2&asc=0&page=1".format(jobcat)
 
 # ------------------------------- #
@@ -62,14 +62,13 @@ job_lists_dict = {
 def job_info(href):
     try:
         time.sleep(5)
-        res = requests.get(href)
-        soup = BeautifulSoup(res.text, "html5lib")  # Error lxml, html.parser
+        soup = BeautifulSoup(requests.get(href).text, "html5lib")  # Error lxml, html.parser
         # print(soup)
 
         if soup.select('head > title') != "104人力銀行─錯誤頁":
-            job_company = soup.select('a')[1].text                                            # json[3] company   公司名稱
-            job_content = soup.select('div[class="content"] > p')[0].text.replace("\t", " ")  # json[4] content   工作內容
-            job_uptime = soup.select('time[class="update"]')[0].text                          # json[8] post_data 公布時間
+            job_company = soup.select('a')[1].text                         # json[3] company   公司名稱
+            job_content = soup.select('div[class="content"] > p')[0].text  # json[4] content   工作內容
+            job_uptime = soup.select('time[class="update"]')[0].text       # json[8] post_data 公布時間
 
             reqs = soup.find_all(['dt', 'dd'])
             # print(reqs)
@@ -138,50 +137,60 @@ try:
             # -------------------------------------------------------------------------- #
             # Bad ! Need Fixed !
             # Exception: 'NoneType' object is not iterable
-            # Hint: https://www.104.com.tw/job/
-            pattern = re.compile(r'https://www.104.com.twhttp://hunter.104.com.tw/.+')
-            match = pattern.match(href)
-            pattern2 = re.compile(r'https://www.104.com.twhttp://tutor.104.com.tw/.+')
-            match2 = pattern2.match(href)
-            if match:
-                continue  # hunter.104.com.tw
-            elif match2:
-                continue  # tutor.104.com.tw
-            elif href == "https://www.104.com.twjavascript:void(0)":
-                continue  # case.104.com.tw
+            # pattern = re.compile(r"https://www.104.com.twhttp://hunter.104.com.tw/.+")
+            # match = pattern.match(href)
+            # pattern2 = re.compile(r"https://www.104.com.twhttp://tutor.104.com.tw/.+")
+            # match2 = pattern2.match(href)
+            # if match:
+            #     continue  # hunter.104.com.tw
+            # elif match2:
+            #     continue  # tutor.104.com.tw
+            # elif href == "https://www.104.com.twjavascript:void(0)":
+            #     continue  # case.104.com.tw
             # -------------------------------------------------------------------------- #
 
-            job_dict = {
-                "title": title,
-                "url": href
-            }
+            href_format = re.compile(r"https://www.104.com.tw/job/.+")
+            match_href = href_format.match(href)
 
-            # check output
-            # print(title)  # json[1] title 職稱
-            # print(href)   # json[2] url   工作頁面連結
-            # print("--" * 50)
-            # print(job_dict)
-            # print(job_info(href))
-            # print("--" * 50)
+            if match_href:
 
-            # update dictionary
-            job_dict.update(job_info(href))
-            # print(job_dict)
-            # print("--" * 50)
+                job_dict = {
+                    "title": title,
+                    "url": href
+                }
 
-            # append dictionary to list
-            job_lists_dict["job_lists"].append(job_dict)
-            # print(job_lists_dict["job_lists"])
+                # check output
+                # print(title)  # json[1] title 職稱
+                # print(href)   # json[2] url   工作頁面連結
+                # print("--" * 50)
+                # print(job_dict)
+                # print(job_info(href))
+                # print("--" * 50)
 
-            count += 1
-            print("Scraping: " + str(count) + " (" + str(page) + " / " + str(totalPages) + " Pages)")
+                # update dictionary
+                job_dict.update(job_info(href))
+                # print(job_dict)
+                # print("--" * 50)
+
+                # append dictionary to list
+                job_lists_dict["job_lists"].append(job_dict)
+                # print(job_lists_dict["job_lists"])
+
+                count += 1
+                # Check Crawler
+                print("Scraping: " + str(count) + " (" + str(page) + " / " + str(totalPages) + " Pages)")
+
+            else:
+                continue
 
         time.sleep(5)
+except requests.HTTPError as e:
+    print(e)
 finally:
     pass
 
 
-# Writing JSON data
+# The function to write JSON data
 def saveJson(data, fileName):
     with open(fileName, "w", encoding="utf8") as f:
         json.dump(data, f, ensure_ascii=False)
@@ -192,7 +201,3 @@ saveJson(job_lists_dict, "Job_104_" + str(jobcat) + ".json")
 
 # print(job_lists_dict)
 print(str(totalPages) + " Pages Done.")
-
-
-# Error Json[Content]
-# https://www.104.com.tw/job/?jobno=4ve5n&jobsource=n104bank1&hotjob_chr=
