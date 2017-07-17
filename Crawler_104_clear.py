@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 # [資訊軟體系統類]  jobcat=2007000000
 # [軟體╱工程類人員] jobcat=2007001001 - 2007001012
 # [MIS╱網管類人員] jobcat=2007002001 - 2007002008
-jobcat = 1002
+jobcat = 1003
 index = "https://www.104.com.tw/jobbank/joblist/joblist.cfm?jobsource=n104bank1&ro=0&jobcat=200700{}&order=2&asc=0&page=1".format(jobcat)
 # ------------------------------- #
 
@@ -58,17 +58,18 @@ job_lists_dict = {
 def job_info(href):
     try:
         time.sleep(5)
-        soup = BeautifulSoup(requests.get(href).text, "html5lib")  # Error lxml, html.parser
+        res = requests.get(href)
+        soup = BeautifulSoup(res.text, "html5lib")  # Error lxml, html.parser
 
         if soup.select('head > title') != "104人力銀行─錯誤頁":
-            job_company = soup.select('a')[1].text                         # json[3] company   公司名稱
-            job_content = soup.select('div[class="content"] > p')[0].text  # json[4] content   工作內容
-            job_uptime = soup.select('time[class="update"]')[0].text       # json[8] post_data 公布時間
+            job_company = soup.select('a')[1].text
+            job_content = soup.select('div[class="content"] > p')[0].text
+            job_uptime = soup.select('time[class="update"]')[0].text
 
             reqs = soup.find_all(['dt', 'dd'])
-            job_tools = ""   # json[5] tools  擅長工具
-            job_skills = ""  # json[6] skills 工作技能
-            other_con = ""   # json[7] other  其他條件
+            job_tools = ""
+            job_skills = ""
+            other_con = ""
 
             for i in range(0, len(reqs) - 1):
                 if "擅長工具" in reqs[i].text:
@@ -107,7 +108,8 @@ try:
     for page in range(1, totalPages + 1):
         indexf = index[:-1] + "{}"
         href = indexf.format(page)
-        soup = BeautifulSoup(requests.get(href).text, "lxml")
+        res = requests.get(href)
+        soup = BeautifulSoup(res.text, "lxml")
 
         jobnameSoup = soup.select('div.job_name')
         totalJobname = len(jobnameSoup)
@@ -152,6 +154,7 @@ finally:
 def saveJson(data, fileName):
     with open(fileName, "w", encoding="utf8") as f:
         json.dump(data, f, ensure_ascii=False)
+
 
 saveJson(job_lists_dict, "Job_104_" + str(jobcat) + ".json")
 
