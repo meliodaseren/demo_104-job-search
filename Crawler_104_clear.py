@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 # [資訊軟體系統類]  jobcat=2007000000
 # [軟體╱工程類人員] jobcat=2007001001 - 2007001012
 # [MIS╱網管類人員] jobcat=2007002001 - 2007002008
-jobcat = 1008
+jobcat = 1007
 index = "https://www.104.com.tw/jobbank/joblist/joblist.cfm?jobsource=n104bank1&ro=0&jobcat=200700{}&order=2&asc=0&page=1".format(jobcat)
 # ------------------------------- #
 
@@ -57,7 +57,7 @@ job_lists_dict = {
 # The function to get job information
 def job_info(href):
     try:
-        time.sleep(5)
+        time.sleep(3)
         res = requests.get(href)
         soup = BeautifulSoup(res.text, "html5lib")  # Error lxml, html.parser
 
@@ -145,7 +145,7 @@ try:
             else:
                 continue
 
-        time.sleep(3)
+        time.sleep(2)
 
 finally:
     pass
