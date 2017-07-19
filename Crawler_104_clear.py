@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 # [資訊軟體系統類]  jobcat=2007000000
 # [軟體╱工程類人員] jobcat=2007001001 - 2007001012
 # [MIS╱網管類人員] jobcat=2007002001 - 2007002008
-jobcat = 1005
+jobcat = 1006
 index = "https://www.104.com.tw/jobbank/joblist/joblist.cfm?jobsource=n104bank1&ro=0&jobcat=200700{}&order=2&asc=0&page=1".format(jobcat)
 # ------------------------------- #
 
