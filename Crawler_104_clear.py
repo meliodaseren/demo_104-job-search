@@ -145,7 +145,7 @@ try:
             else:
                 continue
 
-        time.sleep(2)
+        time.sleep(5)
 
 finally:
     pass
