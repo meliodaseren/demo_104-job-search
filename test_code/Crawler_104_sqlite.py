@@ -1,11 +1,17 @@
+# This code is:
+# 1: Request the 104 html and get the job url
+# 2: Store job url into SQLite
+
 import requests
-import sqlite3
 import math
 import time
+import sqlite3
 import pprint
 from bs4 import BeautifulSoup
 
-# create table & drop table
+index = "https://www.104.com.tw/jobbank/joblist/joblist.cfm?jobsource=n104bank1&ro=0&jobcat=2007000000&order=2&asc=0&page=1"
+
+# Create table & Drop table
 with sqlite3.connect('job.sqlite') as conn:
     c = conn.cursor()
     try:
@@ -35,7 +41,7 @@ def getPage(href):
     return totalPages
 
 
-# sqlite insert&update -> job104
+# SQLite insert & update
 def insert_href(title, href):
     try:
         with sqlite3.connect('job.sqlite') as conn:
@@ -57,22 +63,26 @@ def insert_href(title, href):
         print(e)
         print(href)
 
-totalPages = getPage('https://www.104.com.tw/jobbank/joblist/joblist.cfm?jobsource=n104bank1&ro=0&jobcat=2007000000&order=2&asc=0&page=1')
+totalPages = getPage(index)
 print('Total Pages: ' + str(totalPages))
 
 for page in range(1, totalPages + 1):
-    href = "https://www.104.com.tw/jobbank/joblist/joblist.cfm?jobsource=n104bank1&ro=0&jobcat=2007000000&order=2&asc=0&page={}".format(page)
-    soup = BeautifulSoup(requests.get(href).text, 'lxml')
-    jidSoup = soup.select('div.job_name')
-    totalJid = len(jidSoup)
+    indexf = index[:-1] + "{}"
+    href = indexf.format(page)
+    res = requests.get(href)
+    soup = BeautifulSoup(res.text, 'lxml')
+
+    jobnameSoup = soup.select('div.job_name')
+    totalJobname = len(jobnameSoup)
+
     if page % 10 == 0:
         print(str(page) + ' / ' + str(totalPages))
-    for jid in range(0, totalJid):
+    for jid in range(0, totalJobname):
         title = soup.select('div.job_name')[jid].text.strip()
-        href = "https://www.104.com.tw" + jidSoup[jid].select('a')[0]['href']
+        href = "https://www.104.com.tw" + jobnameSoup[jid].select('a')[0]['href']
         insert_href(title, href)
 
-    time.sleep(1)
+    time.sleep(3)
 
 print('Done.')
 
