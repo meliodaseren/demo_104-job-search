@@ -4,8 +4,6 @@ import math
 import time
 import pprint
 from bs4 import BeautifulSoup
-import lxml
-import threading
 
 # create table & drop table
 with sqlite3.connect('job.sqlite') as conn:
@@ -24,17 +22,15 @@ with sqlite3.connect('job.sqlite') as conn:
         print('Create Table job104')
 
 
-# number of total job
-    # 20 job hrefs in each page, but only get page 150
-    # href selector
-    # soup.select('div.jobname_summary')[0].select('a')[0]['href']
+# The function to get total pages
 def getPage(href):
     res = requests.get(href)
-    # 2017/7/11 23:30 共 20275 筆
-    totalPages = int(BeautifulSoup(res.text, 'lxml').select('form#jobform')[0].select('ul')[0]
-                                                    .select('li')[0].text.split('筆')[0][1:].strip())
+    # href selector
+    # soup.select('div.jobname_summary')[0].select('a')[0]['href']
+    totalPages = int(BeautifulSoup(res.text, "lxml").select('form#jobform')[0].select('ul')[0]
+                                                    .select('li')[0].text.split("筆")[0][1:].strip())
     res.close()
-    # 20 job hrefs in each page, but only get page 150
+    # 20 job urls in each page, but only get page 150
     totalPages = 150 if math.ceil(totalPages / 20) > 150 else math.ceil(totalPages / 20)
     return totalPages
 
@@ -44,11 +40,11 @@ def insert_href(title, href):
     try:
         with sqlite3.connect('job.sqlite') as conn:
 
-            # Query histry, whether we have insert it before...
+            # Query history, whether we have insert it before
             c = conn.cursor()
             qryString = "SELECT href FROM job104 where href=:href"
             c.execute(qryString, {'href': href})
-            # if there are nothing like href
+            # if there are nothing like
             if len(c.fetchall()) == 0:
                 # insert new one
                 insert_string = "INSERT INTO job104 (title, href, times) VALUES (?, ?, 1)"
@@ -61,10 +57,9 @@ def insert_href(title, href):
         print(e)
         print(href)
 
-
-totalPages = getPage(
-    'https://www.104.com.tw/jobbank/joblist/joblist.cfm?jobsource=n104bank1&ro=0&jobcat=2007000000&order=2&asc=0&page=1')
+totalPages = getPage('https://www.104.com.tw/jobbank/joblist/joblist.cfm?jobsource=n104bank1&ro=0&jobcat=2007000000&order=2&asc=0&page=1')
 print('Total Pages: ' + str(totalPages))
+
 for page in range(1, totalPages + 1):
     href = "https://www.104.com.tw/jobbank/joblist/joblist.cfm?jobsource=n104bank1&ro=0&jobcat=2007000000&order=2&asc=0&page={}".format(page)
     soup = BeautifulSoup(requests.get(href).text, 'lxml')
@@ -79,16 +74,15 @@ for page in range(1, totalPages + 1):
 
     time.sleep(1)
 
-print('done!!')
-
+print('Done.')
 
 # Query result program
 with sqlite3.connect('job.sqlite') as conn:
     c = conn.cursor()
     pprint.pprint(list(c.execute('select * from job104')))
 
-# Query maximun times
+# Query maximum times
 with sqlite3.connect('job.sqlite') as conn:
     c = conn.cursor()
-    #     pprint.pprint(list(c.execute('select * from job104 where times > 1')))
+    # pprint.pprint(list(c.execute('select * from job104 where times > 1')))
     pprint.pprint(list(c.execute('select count(times), sum(times) from job104 where times > 1')))
