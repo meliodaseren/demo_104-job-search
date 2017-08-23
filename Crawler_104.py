@@ -8,7 +8,6 @@ import re
 import json
 
 # ----- Crawler Information ----- #
-
 # index page
 # [資訊軟體系統類]  jobcat=2007000000
 # [軟體╱工程類人員] jobcat=2007001001 - 2007001012
